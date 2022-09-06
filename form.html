@@ -1,0 +1,88 @@
+<html>
+  <Head>
+    <br>
+    <title> Class Registration Form </title>
+    <Style>
+    body,form{
+                 background-color:#a8dcde;
+      font-size:30px;
+      font-family:arial;
+             }
+
+      label{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size:20px;
+      }
+      h2{text-align:center;}
+
+       .running{background-repeat:no-repeat; background-position:center;height:250px; width:500px;}
+    </Style>
+  </Head>
+  <body>
+      <br>
+      <center>
+  <img class="running" src="https://thumbs.gfycat.com/BoilingScaryCygnet-max-1mb.gif"></center>
+      <br>
+      <FORM action="form.php/" target="_self" method="POST"
+             onsubmit="return(validate())" name="form">
+             <TABLE cellspacing="2" cellpadding="2" align="center">
+                 <h2> Class Registration Form</H2><br>
+                     <tr>
+
+        <td> <label for="fname"> Full Name:  </label> </td>
+        <td> <input type="text" name="fname" id="fname"> </td>
+        <td id="fnv" class="vld"></td> 
+
+                     </tr>
+
+                     <tr>
+
+        <td> <label for="age"> Age of Child:  </label> </td>
+        <td> <input type="number" name="age" id="age"> </td>
+        <td id="av" class="vld"></td> 
+
+                     </tr>
+
+                       <tr>
+            <td><label for="group"> Gender of group classes you prefer for your child:  </label><br> </td>
+            
+            <td> <select name="group">
+        <option value="-1" selected> Click to choose </option> 
+                    <option value="1"> Male </option>
+                    <option value="2"> Female </option>
+                    <option value="3"> Mixed/Both </option>
+                    </select>
+                     </td>
+            <td id="gv" class="vld"></td> </tr>  
+
+       <tr> <TD> <p style="color:gold"> *Only applicable to same gender as child or mixed. </p>  </TD> </TR> 
+
+      <tr>
+            <td><label for="classes"> Group class for your child:  </label><br> </td>
+            
+            <td> <select name="Classes">
+        <option value="-1" selected> Click to choose </option> 
+                    <option value="1"> Swimming </option>
+                    <option value="2"> Skating </option>
+                    <option value="3"> Basketball </option>
+                    <option value="4"> Football </option>
+                    </select>
+                     </td>
+            <td id="clv" class="vld"></td> </tr>   
+            
+            <tr>
+
+<td> <label for="mobile"> Phone Number of Guardian:  </label> </td>
+        <td> <input type="number" name="mobile" id="mobile"> </td>
+        <td id="av" class="vld"></td> 
+
+                     </tr> 
+<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+                    <tr><td>
+                        <input type="submit" value="Submit" style="font-family:monospace; font-size:25px; margin:20px;">
+                    </td></tr>
+
+                 </TABLE>
+             </FORM>
+  </body>
+</html>
